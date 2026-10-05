@@ -1,0 +1,27 @@
+# === 大数据文件（不纳入版本控制） ===
+*.bag
+*.ply
+*.mp4
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# === 输出产物 ===
+runs/
+outputs/
+*.out
+*.log
+
+# === IDE / 工具 ===
+.idea/
+.vscode/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# === 系统 ===
+.DS_Store
+Thumbs.db

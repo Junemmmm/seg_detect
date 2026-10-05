@@ -1,0 +1,13 @@
+# Core
+ultralytics
+opencv-python
+numpy
+pyrealsense2
+open3d
+pandas
+scipy
+scikit-learn
+
+# Deep learning (install torch separately per CUDA version: https://pytorch.org)
+torch
+torchvision
