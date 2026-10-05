@@ -2,6 +2,7 @@
 *.bag
 *.ply
 *.mp4
+!assets/*.mp4
 
 # === Python ===
 __pycache__/

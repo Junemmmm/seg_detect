@@ -7,6 +7,16 @@
 
 两路任务并行运行、结果实时叠加显示。经过光照变化、遮挡、多路况等复杂环境的多次测试，系统检测准确、稳定，平均处理速度约 35 FPS。此外，为满足嵌入式部署需求，本项目还规划了基于 ZYNQ7015 异构 SoC 的 INT8 量化与硬件加速方案。
 
+**联系方式**：[lyjunemmm@163.com](mailto:lyjunemmm@163.com)
+
+## 效果展示
+
+| 多种复杂环境下的检测效果 | 设备概况 | 检测模型框架 |
+| :---: | :---: | :---: |
+| ![复杂环境检测](assets/result_1.png) | ![设备概况](assets/result_2.png) | ![模型框架](assets/result_3.png) |
+
+**演示视频**：[▶ 点击观看 `demo.mp4`](assets/demo.mp4)
+
 ## 整体流程
 
 1. 读取 RealSense 录制的 `.bag` 文件（或实时相机流）
@@ -49,8 +59,8 @@ seg_detect/
 │   ├── train.py
 │   └── val.py
 ├── weights/               # 模型权重
-├── data/                  # 测试图片（before/ 为 labelme 标注样例）
-└── docs/                  # 设计文档（架构 / 性能 / ZYNQ 部署）
+├── assets/                # 效果展示图片与演示视频
+└── data/                  # 测试图片（before/ 为 labelme 标注样例）
 ```
 
 ## 模型权重
@@ -91,8 +101,3 @@ python tests/two_test.py
 python tools/record_bag.py
 ```
 
-## 参考文档
-
-- `docs/system_architecture.md` —— 系统总体架构设计
-- `docs/performance_analysis.md` —— 性能瓶颈分析与优化
-- `docs/zynq_implementation_design.md` —— ZYNQ7015 硬件加速部署方案
